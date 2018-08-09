@@ -66,7 +66,7 @@ app.get("/bad",(req,res)=>{
 */
 
 
-
+/*
 app.get("/test",(req,res)=>{
 
     res.send({status:"OK",message:"test"});
@@ -77,4 +77,4 @@ app.listen(3000,()=>{
 
     console.log("server start on port 3000");
 
-});
+});*/
