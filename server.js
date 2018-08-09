@@ -1,7 +1,7 @@
 const express = require("express");
 const hbs = require("hbs");
 const fs = require("fs");
-const port = process.env.port || 3000;
+//const port = process.env.port || 3000;
 
 var app = express();
 
@@ -56,14 +56,25 @@ app.get("/about",(req,res)=>{
 });
 
 
+
+
 app.get("/bad",(req,res)=>{
 
     res.send({status:"Failed",message:"Can not find the page"});
 
-});*/
+});
+*/
 
-app.listen(port,()=>{
 
-    console.log("server start on port" + port);
+
+app.get("/test",(req,res)=>{
+
+    res.send({status:"OK",message:"test"});
+ 
+ });
+
+app.listen(3000,()=>{
+
+    console.log("server start on port 3000");
 
 });
