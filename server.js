@@ -5,6 +5,7 @@ const port = process.env.port || 3000;
 
 var app = express();
 
+/*
 // HBS
 hbs.registerPartials(__dirname + "/views/partials");
 hbs.registerHelper("getCurrentYear",()=>{
@@ -59,7 +60,7 @@ app.get("/bad",(req,res)=>{
 
     res.send({status:"Failed",message:"Can not find the page"});
 
-});
+});*/
 
 app.listen(port,()=>{
 
